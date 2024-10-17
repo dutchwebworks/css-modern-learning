@@ -2,4 +2,4 @@
 
 *By Dutchwebworks, October 2024*
 
-Learning about modern CSS. Like CSS Grid line and area placement, CSS Cascade Layers
+Learning project about CSS Grid line based layout, CSS Cascade layers, native CSS nesting and CSS font-sizes using `clamp()` function.
