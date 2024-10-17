@@ -1,4 +1,5 @@
-# CSS modern learning
+# CSS Modern Learning
 
-*By Dennis Burger, Amsterdam september 2024*
+*By Dutchwebworks, October 2024*
 
+Learning about modern CSS. Like CSS Grid line and area placement, CSS Cascade Layers
