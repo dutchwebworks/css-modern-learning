@@ -9,33 +9,61 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="wrapper">
-        <header class="header">
+    <div id="wrapper">
+        <header id="header">
             <nav>
-                <ul>
+                <menu>
                     <li><a href="#" aria-current="page">Home</a></li>
                     <li><a href="#">Catalog</a></li>
                     <li><a href="#">About</a></li>
-                </ul>
+                </menu>
             </nav>
         </header>
 
-        <div class="hero">   
+        <section id="hero">   
             <picture>
                 <source srcset="/img/texel-lighthouse-mobile.jpg" type="image/jpg" media="(max-width: 500px)">
-                <img src="/img/texel-lighthouse.jpg" loading="eager" width="2048" height="857" alt="Texel lighthouse">
+                <img src="/img/texel-lighthouse-small.jpg" loading="eager" width="2048" height="500" alt="Texel lighthouse">
             </picture>
-        </div>
+        </section>
         
-        <main class="main">
-            <article class="intro">
-                <h1>Scaling Hero Header Image</h1>
-                    
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis doloribus, ad maxime minus, ab dolore, molestiae vitae saepe omnis unde eligendi consectetur aliquid voluptatum. Perspiciatis dolorem deserunt aperiam quibusdam omnis. Ex rem quas praesentium libero corporis voluptates incidunt reiciendis recusandae?</p>
-                
-                <p>Saepe omnis unde eligendi consectetur aliquid voluptatum. Perspiciatis dolorem deserunt aperiam quibusdam omnis. Ex rem quas praesentium libero corporis voluptates incidunt reiciendis recusandae?</p>
-            </article>
-        </main>
+        <section id="content">
+			<main>
+				<article class="flow">
+					<div class="intro">
+						<h1>Scaling Hero Header Image</h1>
+
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis doloribus, ad maxime minus, ab dolore, molestiae vitae saepe omnis unde eligendi consectetur aliquid voluptatum. Perspiciatis dolorem deserunt aperiam quibusdam omnis. Ex rem quas praesentium libero corporis voluptates incidunt reiciendis recusandae?</p>
+					</div>
+
+					<h2>About us</h2>
+					
+					<p>Saepe omnis unde eligendi consectetur aliquid voluptatum. Perspiciatis dolorem deserunt aperiam quibusdam omnis. Ex rem quas praesentium libero corporis voluptates incidunt reiciendis recusandae?</p>
+
+					<ul>
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores officiis doloremque eius.</li>
+						<li>Pariatur tenetur provident et consequuntur illo eius natus facere maxime porro? Consequatur?</li>
+						<li>Corrupti culpa earum explicabo quisquam eos ducimus quasi eveniet corporis repellendus tenetur.</li>
+					</ul>
+
+					<h3>Catalog with movies</h3>
+
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ut repellendus possimus accusamus. Iste aliquam et voluptates fugit non perferendis?</p>
+					
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ut repellendus possimus accusamus. Iste aliquam et voluptates fugit non perferendis?</p>
+					
+					<h4>Contact</h4>
+					
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ut repellendus possimus accusamus. Iste aliquam et voluptates fugit non perferendis?</p>
+					
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ut repellendus possimus accusamus. Iste aliquam et voluptates fugit non perferendis?</p>
+				</article>
+			</main>
+        </section>
+
+		<footer id="footer">
+			<p>&copy; Dutchwebworks, 2024</p>
+		</footer>
     </div>
 </body>
 </html>
