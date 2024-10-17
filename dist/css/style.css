@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@layer reset, fonts, base, layout, design, utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap') layer(fonts);
+@import url('./tailwind-lite.min.css') layer(utilities);
 
 :root {
 	--clr-primary: deepskyblue;
@@ -96,17 +99,15 @@
 		max-width: 100%;
 		height: auto;
 		display: block;
-	}
+	}	
+}
 
-	.flow > * + * {
-		margin-block-end: 0;
-	}
-
+@layer layout {
 	#wrapper {		
 		height: 100dvh;
 		display: grid;
 		grid-template-columns: [site-start] 1fr [gutter-left-start] 10px [gutter-left-end content-start] minmax(0, 960px) [content-end gutter-right-start] 10px [gutter-right--end] 1fr [site-end];
-		grid-template-rows: [header-start] 50px [header-end hero-start] min-content [hero-end content-start] 100px [content-end] max-content [footer-start] max-content [footer-end];
+		grid-template-rows: [header-start] 50px [header-end hero-start] min-content [content-start] 100px [hero-end] max-content [content-end footer-start] max-content [footer-end];
 
 		> * {
 			grid-column: content;
@@ -123,8 +124,42 @@
 			grid-column: content;
 			display: flex;
 			align-items: center;
+		}		
+	}
+
+	#hero {
+		grid-column: site;
+		grid-row: hero;
+		z-index: 0;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			height: auto;
+			min-height: 250px;
+			aspect-ratio: auto;
+			object-fit: cover;
 		}
-	
+	}	
+
+	#content {
+		padding: clamp(20px, 5vw, 52px);
+		grid-row: content;
+		z-index: 1;
+		border-radius: 8px 8px 0 0;
+		background-color: white;
+	}
+
+	#footer {
+		grid-row: footer;
+		border-top: 1px solid var(--clr-light);
+		padding-inline: clamp(20px, 5vw, 52px);
+		color: var(--clr-light);
+	}
+}
+
+@layer design {
+	#header {	
 		menu {
 			display: flex;
 			gap: 20px;
@@ -143,21 +178,6 @@
 		}
 	}
 
-	#hero {
-		grid-column: site;
-		grid-row: hero / span 2;
-		z-index: 0;
-		overflow: hidden;
-
-		img {
-			width: 100%;
-			height: auto;
-			min-height: 250px;
-			aspect-ratio: auto;
-			object-fit: cover;
-		}
-	}
-
 	.intro {
 		h1 {
 			margin-block-start: 0;
@@ -168,19 +188,10 @@
 			line-height: 2;
 		}
 	}
+}
 
-	#content {
-		padding: clamp(20px, 5vw, 52px);
-		grid-row: content / span 2;
-		z-index: 1;
-		border-radius: 8px 8px 0 0;
-		background-color: white;
-	}
-
-	#footer {
-		grid-row: footer;
-		border-top: 1px solid var(--clr-light);
-		padding-inline: clamp(20px, 5vw, 52px);
-		color: var(--clr-light);
+@layer utilities {
+	.flow > * + * {
+		margin-block-end: 0;
 	}
 }
