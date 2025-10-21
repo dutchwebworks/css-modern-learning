@@ -11,6 +11,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link rel="stylesheet" href="css/style.css">
+
+	<script src="https://cdn.jsdelivr.net/npm/baseline-status@1/baseline-status.min.js" type="module"></script>
 </head>
 <body>
     <div id="wrapper">
@@ -22,7 +24,7 @@
                     <li><a href="#">About</a></li>
                 </menu>
             </nav>
-        </header>
+        </header>	
 
         <section id="hero">   
             <picture>
@@ -39,6 +41,27 @@
 
 						<p>Learning project about CSS Grid line based layout, CSS Cascade layers, native CSS nesting and CSS font-sizes using <code>clamp()</code> function.</p>
 					</div>
+
+					<h2>Baseline web browser support</h2>
+
+					<p>
+						This project demos various modern CSS feature. Some are <strong>not fully supported in all web browsers yet</strong>.
+						You can check the current support status of these features in your web browser using the baseline-status web component below.
+					</p>
+
+					<baseline-status featureId="picture" style="margin-block-start: 20px;"></baseline-status>
+
+					<baseline-status featureId="grid" style="margin-block-start: 20px;"></baseline-status>
+
+					<baseline-status featureId="flexbox" style="margin-block-start: 20px;"></baseline-status>
+
+					<baseline-status featureId="custom-properties" style="margin-block-start: 20px;"></baseline-status>
+
+					<baseline-status featureId="logical-properties" style="margin-block-start: 20px;"></baseline-status>
+
+					<baseline-status featureId="where" style="margin-block-start: 20px;"></baseline-status>
+
+					<baseline-status featureId="cascade-layers" style="margin-block-start: 20px;"></baseline-status>
 
 					<h2>Lorem Ipsum</h2>
 					
