@@ -1,3 +1,6 @@
 {
-  "recommendations": ["phoenisx.cssvar"]
+  "recommendations": [
+    "phoenisx.cssvar",
+    "ritwickdey.liveserver"
+  ]
 }
